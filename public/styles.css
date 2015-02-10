@@ -1,0 +1,29 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	background: url("images/paper.jpg") repeat;
+}
+
+.headerLeft {
+	display: inline-block;
+	height: 25px;
+	color: black;
+	padding: 8px;
+}
+
+.homeHeading {
+	margin: 0;
+	color: green;
+	text-align: center;
+}
+
+.needHelp {
+	text-align: center;
+	margin: 0 auto;
+	color: rgb(39, 115, 193);
+}
+
+.message {
+	color: blue;
+	font-style: oblique;
+}
