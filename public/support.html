@@ -2,17 +2,19 @@
 
 <h1> Tickets </h1>
 
+ <input type="text" ng-model="newMessage" /><button ng-click="sendMessage(newMessage, number)">Send</button>
+
+<i class="fa fa-spinner fa-spin"></i>
+
 	<div class=“col-md-2”>
 <div ng-repeat="number in numbers" class ="message">
-		{{number.from}} <br />
+		<h3>{{number.from}} </h3> <br />
 		{{number.date_sent}} <br />
 		{{number.body}} <br />
 		<hr/>
  </div>
  	</div>
 
- <input type="text" ng-model="newMessage" /><button ng-click="sendMessage(newMessage, number)">Send</button>
 
-<i class="fa fa-spinner fa-spin"></i>
 
  </div>

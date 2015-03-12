@@ -20,10 +20,12 @@ app.use(bodyParser.json());
 app.post("/api/support/messages", function(req, res){
     client.messages.create({
     body: "Not sure what to do",
-    to: "18013585542",
+    to: "+req.body.to",
     from: "+13852194455"
 }, function(err, message) {
-console.log(err, message)})
+	// if (!err({
+	// 	res.status(200).json(message);
+	})
 })
 
 
